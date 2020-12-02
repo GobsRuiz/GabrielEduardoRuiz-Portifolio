@@ -1,0 +1,19 @@
+body{
+    min-height: 100vh;
+    max-height: 100vh;
+
+    display: flex;
+
+    box-sizing: border-box;
+    
+    padding: 40px;
+    position: relative;
+}
+#header{
+    width: 12%;
+}
+#main{
+    width: 88%;
+
+    border: 1px solid red;
+}

@@ -1,0 +1,35 @@
+#header{
+    /* The width and height is beign defined in the body.css */
+    background-color: var(--electronBlue);
+
+    padding: 10px 0;
+}
+
+
+
+/* Photo */
+#header-photo{
+    width: 100%;
+
+    text-align: center;
+}
+#header-photo img{
+    width: 80%;
+}
+
+
+/* Nav */
+#header-nav{
+    display: flex;
+    flex-direction: column;
+}
+#header-nav button{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+
+    padding: 10px 0;
+}#header-nav button:hover{
+    background-color: var(--lightGreenishBlue); 
+}
