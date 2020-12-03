@@ -2,7 +2,10 @@ var sections = document.querySelectorAll("#main section");
 var navButtons = document.querySelectorAll("#header-nav button");
 var indexId = "";
 
-function begin() {
+
+
+// Functions
+function changeSectionsBegin() {
     sections.forEach(element => {
         if(element.id !== 's-about'){
             element.style.display = "none";
@@ -10,7 +13,7 @@ function begin() {
             indexId = element;
         }
     })
-}begin()
+}changeSectionsBegin()
 
 function changeSection() {
     navButtons.forEach(element => {
@@ -22,6 +25,10 @@ function changeSection() {
             var section = selectSection(sectionId);
             section.style.display = "block";
             indexId = section;
+
+            if(sectionId === 's-frontend'){
+                runCardChangeImages()
+            }
         })
     })
 }changeSection()
